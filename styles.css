@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.box{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content:  left;
+  min-height: 20vh;
+}
+label {
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Pop-up style */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Tambahkan beberapa aturan CSS untuk penataan tata letak */
+.password-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.show-password {
+    position: absolute;
+    right: 5px; /* Sesuaikan dengan kebutuhan */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
